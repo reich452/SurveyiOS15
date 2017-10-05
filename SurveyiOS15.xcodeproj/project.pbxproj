@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		012CE9AA1F868DAD002D8A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CE9A91F868DAD002D8A26 /* AppDelegate.swift */; };
-		012CE9AC1F868DAD002D8A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CE9AB1F868DAD002D8A26 /* ViewController.swift */; };
 		012CE9AF1F868DAD002D8A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012CE9AD1F868DAD002D8A26 /* Main.storyboard */; };
 		012CE9B11F868DAD002D8A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012CE9B01F868DAD002D8A26 /* Assets.xcassets */; };
 		012CE9B41F868DAD002D8A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012CE9B21F868DAD002D8A26 /* LaunchScreen.storyboard */; };
+		012CE9C01F8692FA002D8A26 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CE9BF1F8692FA002D8A26 /* Survey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		012CE9A61F868DAD002D8A26 /* SurveyiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		012CE9A91F868DAD002D8A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		012CE9AB1F868DAD002D8A26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		012CE9AE1F868DAD002D8A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		012CE9B01F868DAD002D8A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		012CE9B31F868DAD002D8A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		012CE9B51F868DAD002D8A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012CE9BF1F8692FA002D8A26 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,9 @@
 			isa = PBXGroup;
 			children = (
 				012CE9A81F868DAD002D8A26 /* SurveyiOS15 */,
+				012CE9B51F868DAD002D8A26 /* Info.plist */,
+				012CE9A91F868DAD002D8A26 /* AppDelegate.swift */,
+				012CE9B01F868DAD002D8A26 /* Assets.xcassets */,
 				012CE9A71F868DAD002D8A26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +57,43 @@
 		012CE9A81F868DAD002D8A26 /* SurveyiOS15 */ = {
 			isa = PBXGroup;
 			children = (
-				012CE9A91F868DAD002D8A26 /* AppDelegate.swift */,
-				012CE9AB1F868DAD002D8A26 /* ViewController.swift */,
-				012CE9AD1F868DAD002D8A26 /* Main.storyboard */,
-				012CE9B01F868DAD002D8A26 /* Assets.xcassets */,
-				012CE9B21F868DAD002D8A26 /* LaunchScreen.storyboard */,
-				012CE9B51F868DAD002D8A26 /* Info.plist */,
+				012CE9BE1F86925E002D8A26 /* UI */,
+				012CE9BD1F869256002D8A26 /* View Controller */,
+				012CE9BC1F86924E002D8A26 /* Model Controller */,
+				012CE9BB1F869244002D8A26 /* Model */,
 			);
 			path = SurveyiOS15;
+			sourceTree = "<group>";
+		};
+		012CE9BB1F869244002D8A26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				012CE9BF1F8692FA002D8A26 /* Survey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		012CE9BC1F86924E002D8A26 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		012CE9BD1F869256002D8A26 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		012CE9BE1F86925E002D8A26 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				012CE9AD1F868DAD002D8A26 /* Main.storyboard */,
+				012CE9B21F868DAD002D8A26 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012CE9AC1F868DAD002D8A26 /* ViewController.swift in Sources */,
 				012CE9AA1F868DAD002D8A26 /* AppDelegate.swift in Sources */,
+				012CE9C01F8692FA002D8A26 /* Survey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +307,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SurveyiOS15/Info.plist;
+				DEVELOPMENT_TEAM = WAN4D79W79;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesstpeak.SurveyiOS15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +322,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SurveyiOS15/Info.plist;
+				DEVELOPMENT_TEAM = WAN4D79W79;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesstpeak.SurveyiOS15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
