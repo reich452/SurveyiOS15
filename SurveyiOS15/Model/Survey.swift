@@ -21,17 +21,17 @@ struct Survey {
     let identifier: UUID // - Like a timestamp. Right then and there
     
     // MARK: - MemberWize
-    init(name: String, emoji: String, identifier: UUID) {
+    init(name: String, emoji: String, identifier: UUID = UUID()) {
         self.name = name
         self.emoji = emoji
         self.identifier = identifier
     }
 
     // MARK: - Failable --
-    init?(dictionary: [String: Any], indetifier: String) {
+    init?(dictionary: [String: String], identifier: String) {
        guard let name = dictionary[nameKey] as? String,
         let emoji = dictionary[emojiKey] as? String,
-        let identifier = UUID(uuidString: indetifier) else { return nil }
+        let identifier = UUID(uuidString: identifier) else { return nil }
         
         self.name = name
         self.emoji = emoji
